@@ -1,0 +1,90 @@
+body{
+    background-color: #151515;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.border{
+    width: 700px;
+    height: 200px;
+    background-color: #151515;
+    border: solid 5px;
+    border-image: 
+    linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+    animation: rotate 2.5s ease-in infinite;
+}
+@keyframes rotate{
+    50%{
+        border-image: 
+        linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+    }
+}
+
+#ageConteiner, #specialSymbol, #palindrom, #discount, #weekday, #guessNumber, #date{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#ageOut, #ageLabel, #specialSymbolLabel, #palindromLabel, #discountlLabel, #weekdayLabel, #guessNumberLabel{
+    display: flex;
+    gap: 20px; 
+}
+
+span{
+    color: #ffff;
+}
+
+#ageOutput, #palindromOutput, #specialSymbolOutput, #discountOutput, #weekdayOutput, #guessOutput{
+    color: #ffff;
+    border: #ffff solid 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#dateOut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#dateOutBorder{
+    color: #ffff;
+    border: #ffff solid 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#ageBtn, #specialSymbolBtn, #palindromBtn, #discountBtn, #weekdayBtn, #guessNumberBtn, #biggerNumberBtn,#smallerNumberBtn, #dateBtn{
+    background-image: 
+    linear-gradient(360deg, #ff512f, #dd2476, #1c64ff);
+    font-size: 15px;
+}
+
+#inputDay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#dayLabel, #monthLabel, #yearLabel{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
